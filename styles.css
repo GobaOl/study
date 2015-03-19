@@ -1,0 +1,199 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    width:1260px;
+    margin:0 auto;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.clear{
+    clear: both;
+    overflow: hidden;
+    height: 0 !important;
+    width: 0 !important;
+}
+
+.header .top {
+    background: black;
+    color: white;
+    padding: 30px 20px;
+}
+.header .top li{
+    float: left;
+    margin-right: 15px;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+
+.sector1{
+    float: left;
+    width: 25%;
+    height: 85px;
+
+  }
+.sector1 p{
+    margin-top: 25px;
+}
+.sector2{
+      float: left;
+    width: 50%;
+    text-align: center;
+  }
+.sector3{
+    float:  right;
+    width: 25%;
+    text-align: right;
+    height: 85px;
+      }
+.header .bot li{
+    float: left;
+    margin-right: 15px;
+    font-weight:bold;
+    text-transform: uppercase;
+    height: 44px;
+    padding-top: 26px;
+}
+#gift{
+    padding: 0px;
+}
+#search{
+    padding-top: 18px;
+    color: gray;
+    font-size: 12px;  
+}
+.dropdown{
+    float: left;
+    margin-left: 15%;
+}
+
+.dropdown-inside li{
+    padding-top: 0px !important;
+    width: 150px;
+}
+ul.dropdown li { position: relative; }
+ul.dropdown,
+ul.dropdown-inside {
+    list-style-type: none;
+    padding: 0;
+}
+ul.dropdown-inside {
+    position: absolute;
+    left: -9999px;
+    margin-top: 10px;
+}
+.top .right a:visited{
+    color:white;
+}
+.bot .dropdown a:visited{
+    color:black;
+}
+ul.dropdown li.dropdown-top:hover .dropdown-inside {
+    display: block;
+    left: 0;
+}
+.man1{
+    float: right !important;
+    margin-left: 150px !important;
+    position: absolute !important;
+}
+.man2{
+    float: right !important;
+    margin-left: 514px;
+    position: absolute !important;
+}
+
+.block{
+    position: absolute;
+    margin-top: 50px;
+    z-index: 1;
+    display: none;
+}
+.block1{
+    position: absolute;
+    border: 1px solid rgba(171, 165, 165, 0.34);
+    margin-top: -14px;
+    z-index:  -1;
+    margin-left: -5px;
+    padding: 10px;
+    width: 360px;
+    background: white;
+}
+.block1 img{
+    float: right;
+}
+.block2{
+    z-index: 1;
+    float: right;
+    margin-top: 15px;
+    position: relative;
+
+}
+.block2 img{
+    margin-top: -12px;
+    margin-left: 285px;
+}
+.block3{
+    position: absolute;
+    border: 1px solid rgba(171, 165, 165, 0.34);
+    margin-top: -14px;
+    z-index:  -1;
+    margin-left: -5px;
+    padding: 10px;
+    width: 360px;
+    background: white;
+    text-align: left;
+}
+.block3 img{
+    float: left;
+    margin-left: 10px;
+    padding: 2px;
+}
