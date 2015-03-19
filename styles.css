@@ -117,7 +117,8 @@ a{
 
 .dropdown-inside li{
     padding-top: 0px !important;
-    width: 150px;
+    width: 875px;
+    padding-left: 10px;
 }
 ul.dropdown li { position: relative; }
 ul.dropdown,
@@ -129,6 +130,8 @@ ul.dropdown-inside {
     position: absolute;
     left: -9999px;
     margin-top: 10px;
+    background: white;
+    z-index: 2;
 }
 .top .right a:visited{
     color:white;
@@ -175,7 +178,7 @@ ul.dropdown li.dropdown-top:hover .dropdown-inside {
     float: right;
     margin-top: 15px;
     position: relative;
-
+    display: none;
 }
 .block2 img{
     margin-top: -12px;
@@ -196,4 +199,33 @@ ul.dropdown li.dropdown-top:hover .dropdown-inside {
     float: left;
     margin-left: 10px;
     padding: 2px;
+}
+
+.footer{
+    background-color: #000;
+    position:fixed;
+
+bottom:0;
+    height: 330px;
+    padding: 10px;
+}
+.footermenu li{
+    float: left;
+    margin-left: 50px;
+    text-align: center;
+}
+.footermenu a{
+    color:gray;
+    }
+
+.bottom li{
+    float: left;
+    margin-left: 25px;
+}
+.bottom a:visited{
+    color: gray;
+}
+
+.bottom ul{
+    margin-left: 115px;
 }
