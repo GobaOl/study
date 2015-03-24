@@ -61,7 +61,12 @@ a{
     height: 0 !important;
     width: 0 !important;
 }
-
+.midle{
+    height: 90px;
+}
+.bot{
+    height: 70px;
+}
 .header .top {
     background: black;
     color: white;
@@ -111,8 +116,7 @@ a{
     font-size: 12px;  
 }
 .dropdown{
-    float: left;
-    margin-left: 15%;
+        margin-left: 15%;
 }
 
 .dropdown-inside li{
@@ -121,28 +125,28 @@ a{
     padding-left: 10px;
 }
 ul.dropdown li { position: relative; }
-ul.dropdown,
-ul.dropdown-inside {
-    list-style-type: none;
-    padding: 0;
-}
+
 ul.dropdown-inside {
     position: absolute;
-    left: -9999px;
+    display: none;
     margin-top: 10px;
     background: white;
     z-index: 2;
 }
+
 .top .right a:visited{
     color:white;
 }
-.bot .dropdown a:visited{
+.block1 a:visited{
     color:black;
 }
-ul.dropdown li.dropdown-top:hover .dropdown-inside {
-    display: block;
-    left: 0;
+.sector3 a:visited{
+    color:black;
 }
+.bot a:visited{
+    color:black;
+}
+
 .man1{
     float: right !important;
     margin-left: 150px !important;
@@ -156,8 +160,7 @@ ul.dropdown li.dropdown-top:hover .dropdown-inside {
 
 .block{
     position: absolute;
-    margin-top: 50px;
-    z-index: 1;
+        z-index: 3;
     display: none;
 }
 .block1{
@@ -194,6 +197,7 @@ ul.dropdown li.dropdown-top:hover .dropdown-inside {
     width: 360px;
     background: white;
     text-align: left;
+
 }
 .block3 img{
     float: left;
@@ -204,10 +208,10 @@ ul.dropdown li.dropdown-top:hover .dropdown-inside {
 .footer{
     background-color: #000;
     position:fixed;
-
-bottom:0;
-    height: 330px;
+    height: 430px;
     padding: 10px;
+    width: 1240px;
+
 }
 .footermenu li{
     float: left;
@@ -222,10 +226,72 @@ bottom:0;
     float: left;
     margin-left: 25px;
 }
-.bottom a:visited{
+.bottom a {
     color: gray;
 }
 
 .bottom ul{
     margin-left: 115px;
+}
+.tabletd{
+    float: left;
+    padding-left: 25px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+.tabletd1{
+    float: left;
+    padding-left: 25px;
+    width: 85px;
+}
+.tablename{
+    font-weight: bold;
+}
+.oldprice{
+    text-decoration: line-through;
+    float: left;
+}
+.newprice{
+    font-weight: bold;
+    color: red;
+    float:right;
+    margin-left: 10px;
+}
+.tablebutton{
+    background: #000000;
+    color: white;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+.fot1{
+    float:left;
+    }
+.fot2{
+    margin-left: -25px;
+}
+.fot3{
+   margin-left: -40px;
+}
+.fbot{
+    height: 25px;
+    margin-left: 230px;
+    padding: 10px;
+        }
+.fbot li{
+    float: left;
+    margin-left: 40px;
+    color: gray;
+}
+
+.fbot li a{
+        color: gray;
+}
+.logobot{
+    text-align: center;
+    width: 1250px;
+}
+.bottom{
+    height: 25px;
+    border-bottom: 1px solid gray;
 }
