@@ -134,7 +134,10 @@ ul.dropdown-inside {
     z-index: 2;
 }
 
-.top .right a:visited{
+.top  a:visited{
+    color:white;
+}
+.top  a{
     color:white;
 }
 .block1 a:visited{
@@ -151,6 +154,8 @@ ul.dropdown-inside {
     float: right !important;
     margin-left: 150px !important;
     position: absolute !important;
+    width: 364px;
+    height: 342px;
 }
 .man2{
     float: right !important;
@@ -207,7 +212,6 @@ ul.dropdown-inside {
 
 .footer{
     background-color: #000;
-    position:fixed;
     height: 430px;
     padding: 10px;
     width: 1240px;
@@ -294,4 +298,51 @@ ul.dropdown-inside {
 .bottom{
     height: 25px;
     border-bottom: 1px solid gray;
+}
+.product1{
+    width: 210px;
+    text-align: center;
+    height: 260px;
+    float:left;
+    margin-left: 85px;
+}
+.product{
+    height: 550px;
+}
+.product1 img{
+    height: 200px;
+
+}
+.activemenu a{
+    font-size: 18px;
+}
+
+.dropdown li a:hover{
+    border-bottom: 5px solid #F00;
+    border-radius: 12em 0.5em/ 1em 1.5em;
+}
+.iconleft{
+    float: left;
+    margin-left: 120px;
+}
+.iconright{
+    float: left;
+
+}
+.xlogo{
+    margin-top: 0px !important;
+    cursor: pointer;
+}
+.iconright li{
+    float: left;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+.icontop{
+    height:122px;
+    background: black;
+    display: none;
+}
+.FolowUs{
+    cursor: pointer;
 }
