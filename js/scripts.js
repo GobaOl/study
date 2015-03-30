@@ -7,26 +7,29 @@ $(document).ready(function(){
     $("select").msDropDown();
 
 
-    $('input[type=text],input[type=email],input[type=date]').focus(function(){
+    $('input[type=text],input[type=email],input[type=date],input[type=password]').focus(function(){
         $(this).css({border: '2px solid red'});
     }).blur(function(){
         var newVal = $(this).val().trim();
         $(this).val(newVal);
         if ($(this).val() == "" ) {
-            $(this).css({border: '1px solid red', background: '#FBACAC'})
+            $(this).css({border: '1px solid red', background: '#FBACAC', 'border-radius': '7px'})
         }
         else{
-            $(this).css({border: '1px solid green', background: 'white'})
+            $(this).css({border: '1px solid green', background: 'white', 'border-radius': '7px'})
         }
 
     });
 
     $('#pass').blur(function(){
         pass1 =$(this).val();
-        if (pass1.length <6){
-            alert('Enter 6 characters!');
-                }
-    });
+        for (var i=0;i<=pass1.length+1;i++){
+
+        if(((pass1[i])=='_') || ((pass1[i])=='-') || ((pass1[i])=="\\") ||((pass1[i])=='/') ||((pass1[i])=='|') || (pass1.length <6)) {
+            $('.analiz').css('display', 'block');
+            $('#pass').val('');
+            $('#pass').css({border: '1px solid red', width: '326px', height: '23px','border-radius': '7px'});}
+             }});
     $('#pass1').blur(function(){
         pass2 =$(this).val();
         if (pass1 != pass2){
@@ -38,7 +41,9 @@ $(document).ready(function(){
         }
     });
 
-
+    $('#pass').focus(function(){
+        $('.analiz').css('display', 'none');
+    });
 
     $('.bxslider').bxSlider({
         auto: 'true',
