@@ -2,6 +2,43 @@
  * Created by goba on 23.03.15.
  */
 $(document).ready(function(){
+
+
+    $("select").msDropDown();
+
+    $('input[type=text]').focus(function(){
+        $(this).css({border: '2px solid red'});
+    }).blur(function(){
+        var newVal = $(this).val().trim();
+        $(this).val(newVal);
+        if ($(this).val() == "" ) {
+            $(this).css({border: '1px solid red', background: '#FBACAC'})
+        }
+    }).change(function(){
+        if ($(this).val().trim() == "" ) {
+            $(this).css({border: '1px solid red', background: '#FBACAC'})
+        }
+    });
+
+    $('#pass').blur(function(){
+        pass1 =$(this).val();
+        if (pass1.length <6){
+            alert('Enter 6 characters!');
+                }
+    });
+    $('#pass1').blur(function(){
+        pass2 =$(this).val();
+        if (pass1 != pass2){
+            $('#popupWrapper').show();
+
+            $('#closeMe').click(function () {
+                $('#popupWrapper').hide();
+            });
+        }
+    });
+
+
+
     $('.bxslider').bxSlider({
         auto: 'true',
         autoControls: false,
@@ -37,15 +74,17 @@ $(document).ready(function(){
         $('.dropdown-inside').css('background','white');
     });
 
-    $('.man1').toggle(function () {
+    $('.man1').mouseenter(function () {
         $('.man1').css('opacity','0');
-    }, function () {
+    });$('.man1').mouseleave(  function () {
         $('.man1').css('opacity','1');
     });
 
     $('.FolowUs').click(function(){
         $('.icontop').css('display','block');
     });
+
+
     $('.xlogo').click(function(){
         $('.icontop').css('display','none');
     });
