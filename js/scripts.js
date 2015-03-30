@@ -7,7 +7,7 @@ $(document).ready(function(){
     $("select").msDropDown();
 
 
-    $('input[type=text]').focus(function(){
+    $('input[type=text],input[type=email],input[type=date]').focus(function(){
         $(this).css({border: '2px solid red'});
     }).blur(function(){
         var newVal = $(this).val().trim();
@@ -15,10 +15,10 @@ $(document).ready(function(){
         if ($(this).val() == "" ) {
             $(this).css({border: '1px solid red', background: '#FBACAC'})
         }
-    }).change(function(){
-        if ($(this).val().trim() == "" ) {
-            $(this).css({border: '1px solid red', background: '#FBACAC'})
+        else{
+            $(this).css({border: '1px solid green', background: 'white'})
         }
+
     });
 
     $('#pass').blur(function(){
