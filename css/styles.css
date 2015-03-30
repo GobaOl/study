@@ -350,8 +350,8 @@ ul.dropdown-inside {
 
 
 .input-box{
-    width: 280px;
-    margin:10px auto;
+    margin: 10px 28%;
+    width: 500px;
 }
 
 input[type="checkbox"].css-checkbox + label.css-label {
@@ -371,6 +371,7 @@ label.css-label {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
 }
 input[type="checkbox"].css-checkbox.checked + label.css-label {
     background: url("../images/checkbox-checked.png") 0 13px no-repeat;
@@ -448,30 +449,58 @@ input[type="radio"].css-checkbox:checked + label.css-label {
    }
 
 .select .input-box{
+    width: 10px;
     float: left;
+    margin: 10px 115px;
 }
 #Phone{
-    width: 70px;
-}
-#Phone1{
-    width: 70px;
-}
-.select1 .input-box{
+    width:140px;
     float: left;
 }
-.select{
-    width: 1200px;
-    text-align: center;
+#Phone1{
+    width: 140px;
 }
-.select1 {
-    width: 870px;
-    margin: 0px auto;
-    height: 30px;
+.select1 .input-box{
+    width: 10px;
+    float: left;
+    margin: 10px 115px;
+}
+.select{
+    width: 490px;
+    margin: 40px auto 0px;
+    height: 100px;
 }
 
-#ZIP{
-    width: 188px;
+.select1 {
+    width: 490px;
+    margin: 0px auto 0px;
+    height: 100px;
 }
-#City{
-    width: 186px;
+
+
+.WidthText{
+    width: 320px;
 }
+
+label {
+    width: 160px;
+    float: left;
+}
+
+#sex_msdd,#country_msdd,#State_msdd{
+    width: 325px !important;
+}
+.resetbutton{
+    background: white;
+    color: black;
+    font-weight: bold;
+    width: 140px;
+    height: 30px;
+    font-size: 15px;
+}
+.goButton{background: none repeat scroll 0% 0% black;
+color: white;
+font-weight: bold;
+width: 250px;
+height: 30px;
+font-size:15px ;}

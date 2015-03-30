@@ -6,6 +6,7 @@ $(document).ready(function(){
 
     $("select").msDropDown();
 
+
     $('input[type=text]').focus(function(){
         $(this).css({border: '2px solid red'});
     }).blur(function(){
