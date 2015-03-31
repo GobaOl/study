@@ -34,7 +34,8 @@ $(document).ready(function(){
         pass2 =$(this).val();
         if (pass1 != pass2){
             $('#popupWrapper').show();
-
+            $('#pass').val('');
+            $('#pass1').val('');
             $('#closeMe').click(function () {
                 $('#popupWrapper').hide();
             });
@@ -80,11 +81,14 @@ $(document).ready(function(){
         $('.dropdown-inside').css('background','white');
     });
 
-    $('.man1').mouseenter(function () {
-        $('.man1').css('opacity','0');
-    });$('.man1').mouseleave(  function () {
-        $('.man1').css('opacity','1');
+    $('.man1').click.toggle(
+        function () {
+        $('.man1').css('opacity','0')
+    },
+        function () {
+        $('.man1').css('opacity','1')
     });
+
 
     $('.FolowUs').click(function(){
         $('.icontop').css('display','block');
