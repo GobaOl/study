@@ -81,13 +81,6 @@ $(document).ready(function(){
         $('.dropdown-inside').css('background','white');
     });
 
-    $('.man1').click.toggle(
-        function () {
-        $('.man1').css('opacity','0')
-    },
-        function () {
-        $('.man1').css('opacity','1')
-    });
 
 
     $('.FolowUs').click(function(){
